@@ -1,0 +1,21 @@
+import java.io.*;
+class sum
+{
+   public static void main(String args[])
+    {
+      DataInputStream din = new DataInputStream(System.in);
+      int a,b;
+      try
+       {
+          System.out.println("Enter first number : ");
+          a=Integer.parseInt(din.readLine());
+          System.out.println("Enter second number : ");
+          b=Integer.parseInt(din.readLine());
+          System.out.println("Sum of "+a+" and "+b+" is "+ (a+b));
+       }
+      catch(Exception e)
+       {
+          System.out.println("Error : "+e);
+       }
+    }
+}
